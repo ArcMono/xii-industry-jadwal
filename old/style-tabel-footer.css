@@ -1,0 +1,201 @@
+/*BODY*/
+body {
+background: linear-gradient(120deg, #f1f0f1f6, #e1e2e6, #e6e9ed);
+font-family: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+
+/* footer tinggi 56px + ruang aman */
+padding-bottom: 70px;
+}
+
+/*NAVBAR*/
+.navbar-grad {
+background:linear-gradient(135deg,#0d6efd,#2563eb #7c3aed);
+}
+
+/*TEXT PADA NAVBAR*/
+.brand-text {
+font-family:"Josefin Sans";
+font-weight: 700;
+letter-spacing: 0.8px;
+color: #fff;
+}
+
+/*HDR CARD: Untuk Memberi Bayangan menggunakan 2 Warna pada BOX dengan box-shadow*/
+
+.hdr-card {
+box-shadow: 0 8px 24px rgba(13, 110, 253, 0.18),
+            0 12px 32px rgba(102, 16, 242, 0.18);
+overflow: hidden ;
+}
+
+/*bertujuan untuk membuat apabilah ada elemen di dalam card contoh nya kita akam membuat line atau garis berwarna jika melewati ukurann box maka garis nya akan terpotong secara otomatis*/
+/*HDR LINE: Untuk Memberi garis aksen dengan pada BOX*/
+
+.hdr-line {
+    height: 6px;/*fungsi nya untuk memberikan ketebalan garis yang berwarna/aksen di atas box card*/
+    background: linear-gradient(135deg,#0d6efd, #2563eb, #7c3aed);
+}
+
+/*HDR TITLE adalah Judul Pertama Dalam BOX HEADER*/
+
+.hdr-title {
+font-family:'Courier New', Courier, monospace;
+font-size: 16px;
+font-weight: 800;
+letter-spacing: 0.6px;
+margin: 0;
+color: #111;
+}
+
+/*HDR SUB adalah Text Sub di bawawa HDR Title sebagai Judul*/
+
+.hdr-sub{
+font-size: 14px;
+color: rgb(19, 18, 18);
+}
+
+/*HDR BADGE Berfungsi untuk mebuat box elipp sematacan button elips begitu yang akan di gunakan text ONLINE*/
+.hdr-badge {
+    background: linear-gradient(135deg,#0d6efd, #2563eb, #7c3aed);
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.45),
+            0 6px 18px rgba(102, 16, 142, 0.45);
+    font-weight: 700;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    margin-left: auto; /*kunci ke kiri desktop*/
+    white-space: nowrap;
+}
+
+@media (max-width: 576px) {
+}
+
+.hdr-flex{
+    flex-wrap: wrap;
+    align-items: flex-start
+    }
+
+
+.hdr-flex > div:first-child {
+    width: 100%;
+}
+
+.hdr-badge {
+    margin-top: 10px;
+    margin-left: auto;
+    white-space: nowrap;
+}
+
+/* kunci ke kanan di desktop
+/*MEMBUAT BADGE UKURAN RESPONSIVE HP: badge turun ke bawah*/
+@media (max-width: 576px) {
+.hdr-flex{
+flex-wrap: wrap; /* izinkan turun baris */
+align-items: flex-start; /*fungsi saat ukuran tablet /laptop Rapi dara atas badge nya di posisi kanan*/
+/* Ini fingsi target div pertama (teks) besar nya bisa responsive dengan Hp*/
+    }
+}
+
+.hdr-flex > div:first-child{
+width:100%;
+}
+
+.hdr-badge {
+margin-left: 0;/* INI KUNCI:jadi ke kiri */
+margin-top: 8px;
+align-self: flex-start;/* pastikan mulai dari kiri */
+}
+
+/*JADWAL - WRAP-PANEL - TAB- TABEL*/
+.jadwal-wrap{ /*Jadwal wrap ada kelas CSS box besar pembukus tabel jadwal Yati dan angel ingat ya ini penring agar tabel terbukungkus rapi*/
+background: rgba(244, 247, 248,0.46);/*sedikit transparasi warna BOX 2 PANEL rgba fungsi nya memberi warna puti dengan okey YATI*/
+}
+
+/*JADWAL TAB PANEL PUTIH TEMPAT UNTUK TAB CONTET DAN TABEL JADWAL YANG INGIN KITA BUAT*/
+
+.jadwal-panel{
+border: 1px solid rgba(186, 177, 177, 0.9);/*ini fungsinya untuk meberikan ketebalan gari tepi warna hitam pada tabel okey YATI..*/
+overflow: hidden; /*ini fungsinya agar ini panel tidak keluar melewati radius border okey YATI..*/
+}
+
+/*JADWAL TAB NAV LINK*/
+.jadwal-tabs
+.nav-link{
+background: transparent !important;
+color:#4343fdb9;/*Membuat Warna Hari Senin-sampai Jumat*/
+font-weight: 700;
+}
+
+/*JADWAL TAB NAV LINK ACTIVE*/
+.jadwal-tabs .nav-link.active{
+background:#0d6efd !important;
+color: #fff;
+}
+
+.tt{
+white-space: nowrap;
+}
+
+.td-guru{
+text-align: center;
+vertical-align: middle;
+}
+
+.jadwal-table th,
+.jadwal-table td {
+border-color: rgba(126, 35, 35, 0.14);
+}
+
+/*GURU-CARD-FOT0 DAN LABEL NAMA*/
+.guru-img{
+width: 90px;
+height: 100px;
+object-fit: cover;
+border-radius: 10px;
+}
+
+.guru-name{
+    background: #e7f1ff;
+    color: #021a41;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+/*FOOTER*/
+.footer-win {
+    background: linear-gradient(135deg, #0d6efd, #2563eb, #7c3aed);
+    height: 56px;
+    z-index: 1030;
+    box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.footer-text {
+    color: #f1d0d6;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.95px;
+}
+
+.footer-right {
+    color: #fff;
+    font-size: 15px;
+    opacity: 0.95;
+}
+
+@media (max-width: 576px) {
+
+    .jadwal-tabs {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    .jadwal-tabs .nav-link {
+        width: 100%;
+        padding: 8px 0;
+        font-size: 11px;
+        font-weight: 700;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+}

@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JADWAL KBM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lilita+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47Jl6cr9ZwBO7vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style-tabel-footer.css">
+</head>
+<body>
+
+<!--NAV BAR-->
+<nav class="navbar navbar-dark navbar-grad shadow-sm">
+<div class="container">
+<a class="navbar-brand d-flex align-items-center gap-2" href="#">
+<img src="assets/download.jpg" alt="Logo" width="40" height="30" class="d-inline-block align-text-top">
+<span class="brand-text">PROJECT KELAS GAME LAB</span>
+</a>
+</div>
+</nav>
+<!--NAV BAR-->
+
+<!--PEMBATAS BOX COUNTAINER-->
+<main class="container py-5"> <!--main clas container adalah halaman utama agar lebar responsive dengan bostrap sedangkan py-5 adalah pading atau jarak atas bawah besar sama dan tida mepet-->
+
+<!--HEADER ATAS TABEL BOX-->
+    <div class="bg-white rounded-4 hdr-card mb-3"><!--Clas untuk css nya kita ambil
+pada hdr-crd ya-->
+<div class="hdr-line"></div><!--Membuat Garis Aksen horisontal dan hdr-line adalah clas untuk cSs nya ingat div nya jangan di enter ke bawah kerane garis berdiri sendiri diatas box-->
+<!--CONTENT HEADER ATAS TABEL BOX-->
+<div class="d-flex align-items-center justify-content-between p-3 hdr-flex">
+<div>
+<h6 class="hdr-title">JADWAL KBM</h6>
+<div class="hdr-sub">Semester Genap Tahun Ajaran 2026 / 2027</div>
+</div>
+<span class="hdr-badge px-3 py-2 rounded-pill">ONLINE</span>
+</div>
+</div>
+
+<!--BOX BESAR TABEL JADWAL-->
+<div class="jadwal-wrap rounded-4 p-3"><!--kita menggunakan kelas untuk css jadwa-wrap rounded-4 untuk membuat sudut membuala ya sedangkan p-3 untuk membuat padding atau jarak dalam box nya ya-->
+
+<!--NAVBAR TAB HARI SENI-JUMAT semua sisi ya anggel-->
+<ul class="nav nav-pills jadwal-tabs gap-4 mb-3" id="hariTabs" role="tablist">
+<!--tag ul di atas dipakai sebagai container tab
+dan sedangkan nav-pills adalah model tab yang berbentuk elips
+nav adalah componet navbar pada bosgtrap
+sedangkan gap-4 adala jarak antara item pada bostrap flex kika nav dysplay flex
+apa itu dysplay flex : adalah model layout css yang mengatur anak-anak elemen
+di dalam satu container menjadi baris atau kolom (row dan col) okey yati dan angel kamu mengerti..?-->
+<li class="nav-item" role="presentation">
+<button class="nav-link active rounded-3 px-3 py-2" id="tab-senin" data-bs-toggle="tab"
+data-bs-target="#pane-senin" type="button" role="tab" aria-controls="pane-senin" aria-selected="true">SENIN</button>
+</ul>
+<li class="nav-item" role="presentation">
+<button class="nav-link rounded-3 px-3 py-2" id="tab-selasa" data-bs-toggle="tab"
+data-bs-target="#pane-selasa" type="button" role="tab" aria-controls="pane-selasa" aria-selected="false">SELASA</button>
+</li>
+<li class="nav-item" role="presentation">
+<button class="nav-link rounded-3 px-3 py-2" id="tab-rabu" data-bs-toggle="tab"
+data-bs-target="#pane-rabu" type="button" role="tab" aria-controls="pane-rabu"aria-selected="false">RABU</button>
+</li>
+<li class="nav-item" role="presentation">
+<button class="nav-link rounded-3 px-3 py-2" id="tab-kamis" data-bs-toggle="tab"
+data-bs-target="#pane-kamis" type="button" role="tab" aria-controls="pane-kamis"
+aria-selected="false">KAMIS</button>
+</li>
+<li class="nav-item" role="presentation">
+<button class="nav-link rounded-3 px-3 py-2" id="tab-jumat" data-bs-toggle="tab"
+data-bs-target="#pane-jumat" type="button" role="tab" aria-controls="pane-jumat"aria-selected="false">JUMAT</button>
+</li>
+</ul>
+<!--Tutup UL-->
+
+<!--PANEL DENGAN WARNA PUTIH TABEL-->s
+<div class="bg-white rounded-4 jadwal-panel">
+<div class="tab-content" id="hariTabsContent">
+
+<!--HARI SENIN-->
+<div class="tab-pane fade show active" id="pane-senin" role="tabpanel"aria-labelledby="tab-senin" tabindex="0">
+<div class="table-responsive">
+<table class="table table-bordered align-middle mb-0 jadwal-table">
+<thead class="table-light">
+<tr>
+<th style="width: 90px;">JAM</th>
+<th style="width: 220px;">WAKTU</th>
+<th>Guru &amp; Mapel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="text-center fw-bold">1</td>
+<td class="tt">07.15 - 10.00</td>
+<td class="td-guru">
+<div class="d-flex flex-column align-items-center justify-content-center gap-2 py-3 px-2">
+<div class="fw-bold mb-1">PEMROGRAMAN WEB</div>
+<img src="win/2.png"class="img-thumbnail guru-img" alt="guru">
+<div class="guru-name mt-1 px-3 py-2">Win Atasoge, s.kom</div>
+<a href="#" class="btn btn-success btn-sm mt-2 btn-wad-inline-flex align-items-center gap-2"data-wa="081238756560"data-hari="SENIN"
+data-jam="07.15-10.00"
+data-mapel="PEMROGRAMAN WEB"
+data-guru="Win Atasoge, S.kom">
+<i class="bi bi-whatsapp"></i>HUBUNGI
+</a>
+</div><!-- tutup div (wrapper isi guru ROW 1)-->
+</td>
+</tr>
+<!--ROW 2-->
+<tr>
+<td class="text-center fw-bold">2</td>
+<td class="tt">07.15 - 10.00</td>
+<td class="td-guru">
+<div class="d-flex flex-column align-items-center justify-content-center gap-2 py-3 px-2">
+<div class="fw-bold mb-1">PEMROGRAMAN WEB</div>
+<img src="win/2.png" class="img-thumbnail guru-img" alt="guru">
+<div class="guru-name mt-1 px-3 py-2">Win Atasoge, s.kom</div>
+<a href="#" class="btn btn-success btn-sm mt-2 btn-wad-inline-flex align-items-center gap-2 "
+data-wa="081238756560"
+data-hari="SENIN"
+data-jam="07.15-10.00"
+data-mapel="PEMROGRAMAN WEB"
+data-guru="Win Atasoge, s.kom">
+<i class="bi bi-whatsapp"></i>HUBUNGI
+</a>
+</tr>
+</div><!-- tutup div (wrapper isi guru ROW 2)-->
+</td>
+<!--ROW 3-->
+<tr>
+<td class="text-center fw-bold">3</td>
+<td class="tt">07.15 - 10.00</td>
+<td class="td-guru">
+<div class="d-flex flex-column align-items-center justify-content-center gap-2 py-3 px-2">
+<div class="fw-bold mb-1">PEMROGRAMAN WEB</div>
+<img src="win/2.png" class="img-thumbnail guru-img" alt="guru">
+<div class="guru-name mt-1 px-3 py-2">Win Atasoge, S.kom</div>
+<a href="#" class="btn btn-success btn-sm mt-2 btn-wad-inline-flex align-items-center gap-2"
+data-wa="081238756560"
+data-hari="SENIN"
+data-jam="07.15-10.00"
+data-mapel="PEMROGRAMAN WEB"
+data-guru="Win Atasoge, S.kom">
+<i class="bi bi-whatsapp"></i>HUBUNGI
+</tr>
+</td>
+</a>
+</div><!-- tutup div (wrapper isi guru ROW 3)-->
+</tbody>
+</table>
+</div><!--TUTUP table-responsive -->
+</div> <!--TUTUP tab-pane -->
+</div><!-- TUTUP tab-content -->
+</div><!-- TUTUP jadwal-panel -->
+</div> <!--TUTUP jadwal-wrap-->
+</main> <!--TUTUP MAIN DI SINI-->
+<!--FOOTER-->
+<footer class="footer-win fixed-bottom">
+<div class="container h-100"><!-- tinggi ikut footer -->
+<div class="footer-inner h-100 d-flex align-items-center justify-content-between">
+<div class="d-flex align-items-center gap-2">
+<img src="win/wulan.png" alt="logo" width="26" height="26">
+<span class="footer-text">Project kelas Game Lab</span>
+</div>
+<div class="footer-right">@2026 - All XII TJKT 2</div>
+</div>
+</div>
+</footer>
+<!--FOOTER-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxIW"crossorigin="anonymous"></script>
+</body>
+</html>
